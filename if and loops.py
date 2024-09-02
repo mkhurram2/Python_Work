@@ -12,11 +12,11 @@ for i in range(4):
     print(f"I am {i}")
 
 for i in range(1,5):
-    print(f"I am {i}")
+    print(f"I I am {i}")
 
 num3=int(input("enter a numer"))
 total =0
-for i in range(1,num3+1):
+for i in range(0,num3+1):
     total += i
     print(total)
 print(total)
