@@ -1,14 +1,12 @@
 # Whether it is divisible by both 2 and 3 or anyone of them 
 # or not divisible by both check all the cases and print statement for each case.
 
-startNum = int(input("Enter the start = "))
-endNum = int(input("Enter the start = "))
-
-if startNum < endNum :
-    for i in range(startNum,endNum+1):
-        if i % 2 == 0 and i % 3 == 0:
-            print(f" {i} is divisible by both 2 and 3")
-        else:
-            print(f" {i} is not divisible by both 2 and 3")
+num = int(input("Enter a number: "))
+if num % 2 == 0 and num % 3 == 0:
+  print(num, "is divisible by both 2 and 3")
+elif num % 2 == 0:
+  print(num, "is divisible by 2 but not by 3")
+elif num % 3 == 0:
+  print(num, "is divisible by 3 but not by 2")
 else:
-    print("Enter Rang is not correct")
+  print(num, "is not divisible by either 2 or 3")
