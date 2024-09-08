@@ -7,4 +7,5 @@ def valOfCyl(r:int,h:int)->float:
 r = int(input("enter the Radius of cylinder = "))
 h = int(input("enter the Height of cylinder = "))
 
-print ("Volume of a cylinder is = ",round(valOfCyl(r,h),2) )
+
+print (f"olume of a cylinder is = {(valOfCyl(r,h)):.2f}")
