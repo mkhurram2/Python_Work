@@ -31,3 +31,6 @@ num4=0
 while num4 <=endnum:
     print(f"num4 {num4}")
     num4 += 1
+
+for i in range(201):
+    print(i)
