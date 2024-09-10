@@ -1,4 +1,4 @@
-num1=int(input("enter a number which required: "))
+num1=int(input("enter a number which table is required: "))
 for i in range(1,11):
     print(f"{num1} * {i} = {i * num1}")
 
