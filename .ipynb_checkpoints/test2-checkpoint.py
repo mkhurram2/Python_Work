@@ -112,15 +112,3 @@ print(thislist)
 
 thislist = ["apple", "banana", "cherry"]
 [print(x) for x in thislist]
-
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = [x for x in fruits if "a" in x]
-print(newlist)
-
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = [x for x in fruits]
-print(newlist)
-
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlistme = [x for x in fruits if "o" in x]
-print(newlistme)
