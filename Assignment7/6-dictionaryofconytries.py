@@ -3,7 +3,7 @@
 countries_with_capital = dict(
     pakistan = "Islamabad",
     india = "New Delhi",
-    chinan = "Beijing",
+    china = "Beijing",
     afghanistan = "Kabul",
     iran = "Tehran"
 )

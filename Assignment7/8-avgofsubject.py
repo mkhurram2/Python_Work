@@ -33,3 +33,4 @@ getavg = avgofsubjectlist(subjects["Science"],"Science")
 getavg = avgofsubjectlist(subjects["English"],"English")
 
 
+print(subjects.get("Math")[0])
