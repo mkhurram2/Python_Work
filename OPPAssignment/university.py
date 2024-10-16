@@ -44,40 +44,40 @@ class Session:
         self.students = students
 
 # Example usage
-University = university("Panaversity", "Faisalabad, Pakistan.")
+university1 = university("Panaversity", "Faisalabad, Pakistan.")
 
 teacher1 = Teacher("Naveed Sarwar", 35, "Male", "Computer Science", 5)
 teacher2 = Teacher("Abu Hurairah", 28, "Male", "Computer Science", 3)
-University.add_teacher(teacher1)
-University.add_teacher(teacher2)
+university1.add_teacher(teacher1)
+university1.add_teacher(teacher2)
 
 student1 = Student("Muhammad Khurram", 20, "Male", 101)
 student2 = Student("Muhammad Hassan", 22, "Male", 102)
 student3 = Student("Muhammad Hussain", 23, "Male", 103)
 student4 = Student("Ayesha", 21, "Female", 104)
-University.add_student(student1)
-University.add_student(student2)
-University.add_student(student3)
-University.add_student(student4)
+university1.add_student(student1)
+university1.add_student(student2)
+university1.add_student(student3)
+university1.add_student(student4)
 
 session1 = Session("Cloud Native Generative, Agentic, and Robotic AI Engineer", "10:00 AM", "01:00 PM", teacher2, [student3, student4])
-University.add_session(session1)
+university1.add_session(session1)
 
 session2 = Session("Cloud Native Generative, Agentic, and Robotic AI Engineer", "02:00 PM", "06:00 PM", teacher1, [student1, student2])
-University.add_session(session2)
+university1.add_session(session2)
 
 
-print(University)
+print(university1)
 
-print(f"\nTotal Teachers in {University.name}:")
-for teacher in University.teachers:
+print(f"\nTotal Teachers in {university1.name}:")
+for teacher in university1.teachers:
     print(teacher.name)
-print(f"\nTotal Students in {University.name}:")
-for student in University.students:
+print(f"\nTotal Students in {university1.name}:")
+for student in university1.students:
     print(student.name)
 
 print("\nSessions:")
-for session in University.sessions:
+for session in university1.sessions:
     print(f"\nSession Name: {session.session_name}")
     print(f"Start Time: {session.start_time}")
     print(f"End Time: {session.end_time}")
