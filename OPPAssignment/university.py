@@ -43,14 +43,16 @@ class Session:
         self.teacher = teacher
         self.students = students
 
-# Example usage
+# Adding Unversity
 university1 = university("Panaversity", "Faisalabad, Pakistan.")
 
+# Adding Teachers
 teacher1 = Teacher("Naveed Sarwar", 35, "Male", "Computer Science", 5)
 teacher2 = Teacher("Abu Hurairah", 28, "Male", "Computer Science", 3)
 university1.add_teacher(teacher1)
 university1.add_teacher(teacher2)
 
+# Adding Students
 student1 = Student("Muhammad Khurram", 20, "Male", 101)
 student2 = Student("Muhammad Hassan", 22, "Male", 102)
 student3 = Student("Muhammad Hussain", 23, "Male", 103)
@@ -60,6 +62,7 @@ university1.add_student(student2)
 university1.add_student(student3)
 university1.add_student(student4)
 
+# Adding sessions
 session1 = Session("Cloud Native Generative, Agentic, and Robotic AI Engineer", "10:00 AM", "01:00 PM", teacher2, [student3, student4])
 university1.add_session(session1)
 
