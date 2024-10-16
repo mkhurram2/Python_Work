@@ -48,9 +48,11 @@ employee_details2["age"]=44
 employee_details2["year"]=2024
 employee_details2["phone"]=321866941
 employee_details2.update({"name":"Ali"})
-employee_details2["phone"]=3218669941
 employee_details2.update({"name2":"Khurram"})
 print(employee_details2)
+
+
+
 
 subjects= {
     "Math": [90,80,95,65],
@@ -63,3 +65,20 @@ print(f"Subjects with numbers: {subjects}")
 subjects["Math"].append(50)
 subjects["Science"].append(75)
 subjects["English"].append(60)
+
+
+employee_details1 = {101: 'Ali', 102: 'Ahmed', 103: 'khurram'}
+
+employee_details2 = employee_details1  # Shallow
+
+employee_details1.update({"101":"Ali2"})
+print(employee_details1)
+print(employee_details2)
+
+employee_details1 = {101: 'Ali', 102: 'Ahmed', 103: 'khurram'}
+
+employee_details2= employee_details1.copy() # Deep:
+
+employee_details1.update({"101":"Ali2"})
+print(employee_details1)
+print(employee_details2)

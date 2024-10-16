@@ -40,4 +40,25 @@ finally:
     print("finally inside the except call")
 print("St-8")
 
+try:
+    print(10/0)
+except Exception as e:
+    print(e)
+print("adter error")
 
+
+try:
+    result = 10/2
+except ZeroDivisionError:
+    print("Error")
+else:
+    print(f"result is :{result}")
+print("adter error")
+
+def divide (a,b):
+    raise ValueError ("this is custom error message")
+
+try:
+    raise ValueError("This is a custom error meassage")
+except ValueError as e:
+    print(e)
