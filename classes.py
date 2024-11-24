@@ -111,3 +111,70 @@ class Person:
 
 p1 = Person("John", 36)
 print(p1)
+
+class person:
+  def __init__(self,name,age):
+    self.name=name
+    self.age=age
+  def myfunc(self):
+    print("hello my name is "+self.name)
+p1=person("john",36)
+p1.myfunc()
+
+class person:
+  def __init__(me,name,age):
+    me.name=name
+    me.age=age
+  def myfunc(me2):
+    print("hello my name is "+me2.name)
+p1=person("john",36)
+p1.myfunc()
+
+
+#Inheritance Class Polymorphism
+
+class Vehicle:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Move!")
+
+class Car(Vehicle):
+  pass
+
+class Boat(Vehicle):
+  def move(self):
+    print("Sail!")
+
+class Plane(Vehicle):
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang") #Create a Car object
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+plane1 = Plane("Boeing", "747") #Create a Plane object
+
+for x in (car1, boat1, plane1):
+  print(x.brand)
+  print(x.model)
+  x.move()
+
+
+class person1:
+    def __init__(self,name="Khurram",age=44):
+      self.__name = name
+      self.__age =  age
+    
+    def persondata(self):
+        print(f"The name of the person is = {self.__name} and age is {self.__age}")
+      
+
+personadd = person1()
+personadd.__name = "Muhammad Khurram"
+personadd.__age = 45
+print(personadd.__name)
+print(personadd.__age)
+personadd.persondata()
+
